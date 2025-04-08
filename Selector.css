@@ -1,0 +1,106 @@
+  /* Universal Selector */
+  * {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#login{
+    background-color: white;
+}
+
+#signup{
+     background-color: orchid;
+}
+
+
+/* descendent selector */
+
+p a{
+
+    color: black;
+
+}
+
+
+/* Adjacent sibling combinator  */
+
+p+h3{
+    color: red;
+    text-decoration: underline;
+}
+
+.upvote + button{
+
+    background-color: blueviolet;
+}
+
+/* Child combinator */
+ 
+div > input{
+    background-color: violet;
+}
+
+/* Attribute Selector */
+
+input[type="text"]{
+    color: black;
+
+}
+
+input[type="password"]{
+    color:gray;
+}
+
+input[type]{
+    background-color: white;
+}
+
+
+/* Psedo Class */
+
+ /* hover   */
+
+button:hover{
+
+    background-color: black;
+    color: white;
+}
+
+h3:hover{
+    text-decoration: none;
+}
+
+/* active */
+
+button:active{
+    background-color: pink;
+}
+
+/* checked */
+
+input:checked+label{
+    color: red;
+    font-weight: bold;
+}
+
+/* nth of type */
+
+div:nth-of-type(1n){
+    background-color:plum;
+}
+
+
+/* Psedo Element */
+
+h1::first-letter{
+    color: blue;
+}
+
+p::first-line{
+    color: purple;
+}
+
+p::selection {
+    color: yellowgreen;
+
+}
+
