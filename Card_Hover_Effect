@@ -1,0 +1,56 @@
+####____HTML____####
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover Effect</title>
+    <link rel="stylesheet" href="Day14.css">
+</head>
+<body>
+
+    <div class="card">
+        <img src="VK.jpg" alt=""Virat">
+        <div class="desc">
+            <h3>Virat Kohli</h3>
+            <p>Cricketer</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="LM.jpg" alt="Messi">
+        <div class="desc">
+            <h3>Lionel Messi</h3>
+            <p>Footballer</p>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+####___CSS____####
+
+.card{
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow:0 2px 5px black ;
+    transition: 2s;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card:hover{
+    box-shadow:0 4px 40px blue ;
+}
