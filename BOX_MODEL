@@ -1,0 +1,93 @@
+#####______HTML_______#####
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <link rel="stylesheet" href="BOX_MODEL.css">
+</head>
+<body>
+    <div id="container">
+
+
+        <div id="A">A</div>
+        <div id="A">B</div>
+        <div id="A">C</div>
+        <div id="A">D</div>
+        <div id="A">E</div>
+        <div id="A">F</div>
+        <Div id="A">G</Div>
+        <div id="A">H</div>
+        <div id="A">I</div>
+
+
+    </div>
+
+    <br>
+
+
+    <div id="navbar"> 
+        <div class="option">logo</div>
+        <div class="option">Home</div>
+        <div class="option">About</div>
+        <div class="option">Contact</div>
+     </div> 
+    
+
+    
+</body>
+</html>
+
+
+
+#####______CSS_______#####
+
+
+#container{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#A{
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border: 2px solid black;
+     border-radius: 10px;
+     font-size: 50px;
+     text-align: center;
+}
+
+
+
+#navbar { 
+    height: 50px;
+    width: 900px;
+    background-color: pink;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: flex-start;
+    align-content: center;
+ }
+
+
+ .option {
+    height: 50px;
+    width: 80px;
+    border-radius: 10px; 
+    margin-left: 5px; 
+    font-size: 24px;
+    line-height: 50px;
+ }
