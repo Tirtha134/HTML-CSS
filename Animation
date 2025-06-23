@@ -1,0 +1,90 @@
+#####___HTML____####
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="Animation.css">
+</head>
+<body>
+    <h1>Animations</h1>
+    <div class="box">This is my first Animation</div>
+    
+</body>
+</html>
+
+
+
+
+
+
+#####___CSS____####
+
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    /* animation-name: widthAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count:infinite ;
+    animation-direction: alternate; */ 
+
+    animation:colAnimate 3s ease-in 0s infinite normal ;
+
+}
+
+
+@keyframes colAnimate {
+    0%{
+        background-color: azure;
+    }
+    
+    50%{
+        background-color: yellow;
+    }
+
+    80%{
+        background-color: burlywood;
+    }
+
+    100%{
+        background-color: skyblue;
+    }
+}
+
+
+@keyframes widthAnimate {
+    
+    from{
+        width: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: white;
+    }
+
+    to{
+        width: 400px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: blue;
+        border-radius: 15px;
+    }
+}
+
+
+@keyframes fontAnimation {
+    from{ font-size: 20px}
+    to{font-size: 40px;}
+}
+
+@keyframes colorAnimate {
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: white;
+    }
+}
